@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { ClerkProvider } from "@clerk/tanstack-react-start";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import appCss from "../styles.css?url";
 import { ThemeProvider } from "@/lib/theme";
@@ -119,6 +120,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
         >
           {children}
         </ClerkProvider>
+        <SpeedInsights />
         <Scripts />
       </body>
     </html>
