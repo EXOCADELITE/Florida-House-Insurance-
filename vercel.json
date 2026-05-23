@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/dashboard/:path*",
+      "destination": "/analyzer",
+      "permanent": false
+    }
+  ]
+}
